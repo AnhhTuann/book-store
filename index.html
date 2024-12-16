@@ -14,7 +14,10 @@
     <!--=============== REMIXICONS ===============-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+      integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <!--=============== SWIPER CSS ===============-->
@@ -28,7 +31,62 @@
   </head>
   <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="nav__logo"
+          ><i class="ri-book-3-line"></i> Book Store</a
+        >
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="ri-home-9-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#featured" class="nav__link">
+                <i class="ri-book-2-line"></i>
+                <span>Featured</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#discount" class="nav__link">
+                <i class="ri-discount-percent-line"></i>
+                <span>Discount</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#new" class="nav__link">
+                <i class="ri-bookmark-line"></i>
+                <span>New Books</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#testimonial" class="nav__link">
+                <i class="ri-chat-3-line"></i>
+                <span>Testimonial</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__actions">
+          <!-- Search button -->
+          <i class="ri-search-line search-button" id="search-button"></i>
+
+          <!-- Login button -->
+          <i class="ri-user-line login-button" id="login-button"></i>
+
+          <!-- Theme button -->
+          <i class="ri-moon-line theme-button" id="theme-button"></i>
+        </div>
+      </nav>
+    </header>
 
     <!--==================== SEARCH ====================-->
     <div class="search" id="search-content"></div>
