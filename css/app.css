@@ -321,4 +321,21 @@ img {
   box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.1);
 }
 
+.services__container {
+  row-gap: 3rem;
+}
+.services__card {
+  text-align: center;
+}
+.services__card i {
+  display: block;
+  font-size: 3rem;
+  color: hsl(230, 62%, 56%);
+  margin-bottom: 1rem;
+}
+.services__title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 /*# sourceMappingURL=app.css.map */

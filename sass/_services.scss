@@ -1,0 +1,18 @@
+.services {
+  &__container {
+    row-gap: 3rem;
+  }
+  &__card {
+    text-align: center;
+    & i {
+      display: block;
+      font-size: 3rem;
+      color: $first-color;
+      margin-bottom: 1rem;
+    }
+  }
+  &__title {
+    font-size: $h3-font-size;
+    margin-bottom: 0.5rem;
+  }
+}
