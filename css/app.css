@@ -75,6 +75,19 @@ img {
   margin-bottom: 2rem;
 }
 
+.button {
+  display: inline-block;
+  background-color: hsl(230, 62%, 56%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  transition: box-shadow 0.4s;
+  border-radius: 0.5rem;
+}
+.button:hover {
+  box-shadow: 0 4px 32px hsla(230, 72%, 32%, 0.4);
+}
+
 .main {
   overflow: hidden; /* For animation ScrollReveal */
 }
@@ -153,6 +166,121 @@ img {
   .nav .nav__actions i:hover {
     color: hsl(230, 62%, 56%);
   }
+}
+.search {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: hsla(230, 12%, 96%, 0.6);
+  backdrop-filter: blur(16px);
+  padding: 8rem 1.5rem;
+  transition: top 0.4s;
+}
+.search__form {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: hsl(230, 100%, 97%);
+  border: 2px solid hsl(230, 50%, 90%);
+  padding-inline: 1rem;
+}
+.search__icon {
+  font-size: 1.25rem;
+  color: hsl(230, 70%, 16%);
+}
+.search__input {
+  width: 100%;
+  padding-block: 1rem;
+  background-color: hsl(230, 100%, 97%);
+  color: hsl(230, 16%, 45%);
+}
+.search__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Show Search */
+.show-search {
+  top: 0;
+}
+
+.login {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: hsla(230, 12%, 96%, 0.6);
+  backdrop-filter: blur(16px);
+  align-items: center;
+  padding: 1.5rem;
+  text-align: center;
+  transition: top 0.4s;
+}
+.login__form {
+  background-color: hsl(230, 100%, 97%);
+  padding: 2rem 1.5rem;
+  border: 2px solid hsl(230, 50%, 90%);
+  row-gap: 1.25rem;
+}
+.login__title {
+  font-size: 1.25rem;
+}
+.login__group {
+  row-gap: 1.25rem;
+}
+.login__label {
+  display: block;
+  text-align: initial;
+  color: hsl(230, 70%, 16%);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+.login__input {
+  width: 100%;
+  background-color: hsl(230, 100%, 97%);
+  border: 2px solid hsl(230, 50%, 90%);
+  padding: 1rem;
+  color: hsl(230, 16%, 45%);
+}
+.login__signup, .login__forgot {
+  display: block;
+  font-size: 0.813rem;
+}
+.login__signup {
+  margin-bottom: 0.5rem;
+}
+.login__signup a {
+  color: hsl(230, 62%, 56%);
+  font-weight: 500;
+}
+.login__forgot {
+  color: hsl(230, 62%, 56%);
+  margin-bottom: 1.25rem;
+}
+.login__button {
+  width: 100%;
+  cursor: pointer;
+}
+.login__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: hsl(230, 70%, 16%);
+  cursor: pointer;
+}
+
+/* Show login */
+.show-login {
+  top: 0;
 }
 
 /*# sourceMappingURL=app.css.map */

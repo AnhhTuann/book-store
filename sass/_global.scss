@@ -19,6 +19,19 @@
   margin-bottom: 2rem;
 }
 
+.button {
+  display: inline-block;
+  background-color: $first-color;
+  color: $white-color;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  transition: box-shadow 0.4s;
+  border-radius: 0.5rem;
+  &:hover {
+    box-shadow: 0 4px 32px hsla(230, 72%, 32%, 0.4);
+  }
+}
+
 .main {
   overflow: hidden; /* For animation ScrollReveal */
 }

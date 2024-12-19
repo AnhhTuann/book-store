@@ -89,15 +89,78 @@
     </header>
 
     <!--==================== SEARCH ====================-->
-    <div class="search" id="search-content"></div>
+    <div class="search" id="search-content">
+      <form action="" class="search__form">
+        <i class="ri-search-line search__icon"></i>
+        <input
+          type="search"
+          placeholder="What are you looking for?"
+          class="search__input"
+        />
+      </form>
+
+      <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
 
     <!--==================== LOGIN ====================-->
-    <div class="login grid" id="login-content"></div>
+    <div class="login grid" id="login-content">
+      <form action="" class="login__form grid">
+        <h3 class="login__title">Log In</h3>
+        <div class="login__group grid">
+          <div>
+            <label for="login-email" class="login__label">Email</label>
+            <input
+              type="email"
+              placeholder="Write your email"
+              id="login-email"
+              class="login__input"
+            />
+          </div>
+          <div>
+            <label for="login-password" class="login__label">Password</label>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              id="login-password"
+              class="login__input"
+            />
+          </div>
+        </div>
+
+        <div>
+          <span class="login__signup"
+            >You don't have an account? <a href="#">Sign up</a></span
+          >
+
+          <a href="#" class="login__forgot">You forgot your password?</a>
+
+          <button type="submit" class="login__button button">Log In</button>
+        </div>
+      </form>
+
+      <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
 
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home section" id="home"></section>
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Browser <br />
+              Select Books
+            </h1>
+            <p class="home__description">
+              Find the best books from your favorite authors, genres, and more.
+              Explore hundreds of books from the world's bestsellers and
+              expertly curated collections. Take avantage of the 50% off sale
+              and get the best books at the best prices.
+            </p>
+            <a href="#" class="button">Explore Now</a>
+          </div>
+        </div>
+      </section>
 
       <!--==================== SERVICES ====================-->
       <section class="services section"></section>
@@ -130,6 +193,6 @@
     <script src=""></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
